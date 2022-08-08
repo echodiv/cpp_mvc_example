@@ -5,10 +5,11 @@
 #ifndef _TEMPERATURE_MODEL_H
 #define _TEMPERATURE_MODEL_H
 
-class TemperatureModel
+#include "Observable.h"
+
+class TemperatureModel : public Observable
 {
     public:
-        TemperatureModel(float tempF);
         float getF();
         float getC();
         void setF(float tempF);

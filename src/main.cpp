@@ -4,7 +4,15 @@
 */
 
 #include "TemperatureModel.h"
+#include "ConsoleView.h"
+#include "Controller.h"
 
-int main(){
+int main()
+{
+    TemperatureModel model;
+    ConsoleView view(&model);
+    Controller controller(&model);
+    controller.start();
+
     return 0;
 }
